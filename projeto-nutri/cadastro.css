@@ -1,0 +1,90 @@
+body {
+    background-color: #fef7ef;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .form-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.0); /* transparente */
+    z-index: 1;
+  }
+
+ .form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/2.png'); 
+  background-size: cover;            /* ← aumenta e preenche melhor */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.50;                  
+  z-index: -1;
+  border-radius: 20px;
+}
+
+  input:focus {
+    outline: none;
+    border-color: #d8958c;
+    box-shadow: 0 0 5px #e6a8a0;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #5e3f3f;
+    letter-spacing: 1px;
+  }
+  
+  input {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #f6b28b;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fef7ef;
+  }
+  
+  button {
+    background-color: #f04f30;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff9960;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    color: #3f5d45;
+    font-weight: bold;
+  }
+  .voltar {
+    display: block;
+    margin-top: 20px;
+    color: #3f5d45;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .voltar:hover {
+    text-decoration: underline;
+  }
